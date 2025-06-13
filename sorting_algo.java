@@ -1,42 +1,17 @@
-Sorting -1
-selection Sort
+
+//Sorting -1
+//selection Sort
 import java.util.*;
 
-public class  {
-    static void selection_sort(int arr[], int n) {
-        for (int i = 0; i < n - 1; i++) {
-            int mini = i;
-            for (int j = i + 1; j < n; j++) {
-                if (arr[j] < arr[mini]) {
-                    mini = j;
-                }
-            }
-            int temp = arr[mini];
-            arr[mini] = arr[i];
-            arr[i] = temp;
-        }
+public class{static void selection_sort(int arr[],int n){for(int i=0;i<n-1;i++){int mini=i;for(int j=i+1;j<n;j++){if(arr[j]<arr[mini]){mini=j;}}int temp=arr[mini];arr[mini]=arr[i];arr[i]=temp;}
 
-        System.out.println("After selection sort:");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-    }
+System.out.println("After selection sort:");for(int i=0;i<n;i++){System.out.print(arr[i]+" ");}System.out.println();}
 
-    public static void main(String args[]) {
+public static void main(String args[]){
 
-        int arr[] = {13, 46, 24, 52, 20, 9};
-        int n = arr.length;
-        System.out.println("Before selection sort:");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-        selection_sort(arr, n);
-    }
-}
+int arr[]={13,46,24,52,20,9};int n=arr.length;System.out.println("Before selection sort:");for(int i=0;i<n;i++){System.out.print(arr[i]+" ");}System.out.println();selection_sort(arr,n);}}
 
-Bubble sort
+//Bubble sort
 
 import java.util.*;
 
@@ -71,8 +46,7 @@ public class tUf {
 
 }
 
-   
-Insertion Sort
+// Insertion Sort
 
 import java.util.*;
 
@@ -105,11 +79,11 @@ public class Main {
         insertion_sort(arr, n);
     }
 
-}  
+}
 
-Sorting -2
+// Sorting -2
 
-Merge Sort
+// Merge Sort
 import java.util.*;
 
 class Solution {
@@ -147,6 +121,7 @@ class Solution {
         merge(arr, low, mid, high); 
     }
 }
+
 public class tUf {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
@@ -167,7 +142,7 @@ public class tUf {
 
 }
 
-Quick Sort
+// Quick Sort
 
 import java.util.*;
 
@@ -204,6 +179,7 @@ class Solution {
             qs(arr, pIndex + 1, high);
         }
     }
+
     public static List<Integer> quickSort(List<Integer> arr) {
         qs(arr, 0, arr.size() - 1);
         return arr;
@@ -213,7 +189,7 @@ class Solution {
 public class tUf {
     public static void main(String args[]) {
         List<Integer> arr = new ArrayList<>();
-        arr = Arrays.asList(new Integer[] {4, 6, 2, 5, 7, 9, 1, 3});
+        arr = Arrays.asList(new Integer[] { 4, 6, 2, 5, 7, 9, 1, 3 });
         int n = arr.size();
         System.out.println("Before Using insertion Sort: ");
         for (int i = 0; i < n; i++) {
@@ -228,4 +204,4 @@ public class tUf {
         System.out.println();
     }
 
-} 
+}
